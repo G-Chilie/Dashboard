@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MaterialUiModule } from './_components/_shared/material-ui.module';
+import { OnboardingComponent } from './navigations/onboarding/onboarding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OnboardingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialUiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
